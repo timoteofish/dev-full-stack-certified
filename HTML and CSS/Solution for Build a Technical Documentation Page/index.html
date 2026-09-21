@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Grid Docs</header>
+      <a class="nav-link" href="#Grid_Basics">Grid Basics</a>
+      <a class="nav-link" href="#Creating_Columns">Creating Columns</a>
+      <a class="nav-link" href="#Placing_Items">Placing Items</a>
+      <a class="nav-link" href="#Responsive_Layouts">Responsive Layouts</a>
+      <a class="nav-link" href="#Grid_Accessibility">Grid Accessibility</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Grid_Basics">
+        <header>Grid Basics</header>
+        <p>CSS Grid is a two-dimensional layout system for arranging content in rows and columns.</p>
+        <p>A grid container is created by setting the display property to grid on a parent element.</p>
+        <code>display: grid;</code>
+        <ul>
+          <li>Use grid for page regions and card layouts.</li>
+          <li>Use clear spacing so content is easy to scan.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Creating_Columns">
+        <header>Creating Columns</header>
+        <p>Columns are defined with grid-template-columns, which accepts fixed, flexible, and repeated values.</p>
+        <p>The fr unit distributes remaining space across tracks in a predictable way.</p>
+        <code>grid-template-columns: 1fr 2fr;</code>
+      </section>
+
+      <section class="main-section" id="Placing_Items">
+        <header>Placing Items</header>
+        <p>Grid items can be placed automatically or assigned to named grid lines.</p>
+        <p>Line-based placement makes complex interfaces easier to maintain.</p>
+        <code>grid-column: 1 / 3;</code>
+        <ul>
+          <li>Let auto-placement handle simple flows.</li>
+          <li>Use line numbers when an item must span tracks.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Responsive_Layouts">
+        <header>Responsive Layouts</header>
+        <p>Responsive grids can adapt without many breakpoints by using minmax and repeat.</p>
+        <p>Media queries are still useful when the whole layout needs to change at a specific width.</p>
+        <code>grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));</code>
+      </section>
+
+      <section class="main-section" id="Grid_Accessibility">
+        <header>Grid Accessibility</header>
+        <p>Grid changes visual layout, but it should not create a confusing reading order.</p>
+        <p>Keep related content together in the source so keyboard and screen reader users have a logical path.</p>
+        <code>gap: 1rem;</code>
+        <ul>
+          <li>Preserve meaningful document structure.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

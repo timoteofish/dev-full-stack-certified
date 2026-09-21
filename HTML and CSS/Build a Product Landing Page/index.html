@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="Bright Brew logo" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#video-section">Demo</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Bright Brew Coffee Kit</h1>
+        <p>A compact pour-over kit for better mornings anywhere.</p>
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+          <input id="email" name="email" type="email" placeholder="Enter your email address" required />
+          <input id="submit" type="submit" value="Get Updates" />
+        </form>
+      </section>
+
+      <section id="features">
+        <div class="feature">
+          <h2>Portable</h2>
+          <p>Everything packs into one slim case for travel, office, or home.</p>
+        </div>
+        <div class="feature">
+          <h2>Reusable</h2>
+          <p>The stainless filter reduces waste and keeps flavor clear.</p>
+        </div>
+        <div class="feature">
+          <h2>Precise</h2>
+          <p>Simple markings help you brew a consistent cup every time.</p>
+        </div>
+      </section>
+
+      <section id="video-section">
+        <iframe id="video" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Product demo"></iframe>
+      </section>
+
+      <section id="pricing">
+        <article class="plan">
+          <h2>Starter Kit</h2>
+          <p>$39</p>
+        </article>
+        <article class="plan">
+          <h2>Travel Kit</h2>
+          <p>$59</p>
+        </article>
+        <article class="plan">
+          <h2>Gift Kit</h2>
+          <p>$79</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

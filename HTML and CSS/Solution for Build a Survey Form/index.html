@@ -1,0 +1,66 @@
+<h1 id="title">Pesquisa</h1>
+
+<p id="description">Responda às perguntas abaixo.</p>
+
+<form id="survey-form">
+
+  <label id="name-label" for="name">Nome</label>
+  <input
+    id="name"
+    type="text"
+    placeholder="Digite seu nome"
+    required
+  >
+
+  <label id="email-label" for="email">E-mail</label>
+  <input
+    id="email"
+    type="email"
+    placeholder="Digite seu e-mail"
+    required
+  >
+
+  <label id="number-label" for="number">Idade</label>
+  <input
+    id="number"
+    type="number"
+    min="10"
+    max="100"
+    placeholder="Digite sua idade"
+  >
+
+  <label for="dropdown">Escolha uma opção:</label>
+  <select id="dropdown">
+    <option value="opcao1">Opção 1</option>
+    <option value="opcao2">Opção 2</option>
+  </select>
+
+  <p>Você gostou?</p>
+
+  <label>
+    <input type="radio" name="gostou" value="sim">
+    Sim
+  </label>
+
+  <label>
+    <input type="radio" name="gostou" value="nao">
+    Não
+  </label>
+
+  <p>Quais recursos você utiliza?</p>
+
+  <label>
+    <input type="checkbox" value="html">
+    HTML
+  </label>
+
+  <label>
+    <input type="checkbox" value="css">
+    CSS
+  </label>
+
+  <textarea placeholder="Deixe seu comentário"></textarea>
+
+  <button id="submit" type="submit">Enviar</button>
+
+</form>
