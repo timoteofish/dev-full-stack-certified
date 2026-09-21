@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #222;
+  color: white;
+}
+
+/* Read rows */
+tr[class="read"] {
+  background-image: linear-gradient(
+    90deg,
+    #d4edda,
+    #b8e5c2
+  );
+}
+
+/* To Read rows */
+tr[class="to-read"] {
+  background-image: linear-gradient(
+    90deg,
+    #fff3cd,
+    #ffe69c
+  );
+}
+
+/* In Progress rows */
+tr[class="in-progress"] {
+  background-image: linear-gradient(
+    90deg,
+    #cfe2ff,
+    #9ec5fe
+  );
+}
+
+/* All spans */
+span {
+  display: inline-block;
+}
+
+/* To Read status */
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #997404;
+  background-image: linear-gradient(
+    #fff3cd,
+    #ffda6a
+  );
+}
+
+/* Read status */
+tr[class="read"] span[class="status"] {
+  border: 1px solid #146c43;
+  background-image: linear-gradient(
+    #d1e7dd,
+    #75b798
+  );
+}
+
+/* In Progress status */
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #084298;
+  background-image: linear-gradient(
+    #cfe2ff,
+    #6ea8fe
+  );
+}
+
+/* Status and rate */
+span[class="status"],
+span[class^="rate"] {
+  height: 25px;
+  width: 100px;
+  padding: 5px;
+}
+
+/* Rating circles */
+span[class^="rate"] > span {
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin: 2px;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+}
+
+/* One-star rating */
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(
+    #ffd700,
+    #ffb300
+  );
+}
+
+/* Two-star rating */
+span[class~="two"] > span:first-child,
+span[class~="two"] > span:nth-child(2) {
+  background-image: linear-gradient(
+    #ffd700,
+    #ffb300
+  );
+}
+
+/* Three-star rating */
+span[class~="three"] > span {
+  background-image: linear-gradient(
+    #ffd700,
+    #ffb300
+  );
+}
