@@ -1,0 +1,5 @@
+This project was created to showcase my progress as a future full stack developer, presenting in a clear and objective way the skills, knowledge, and experiences I have been developing throughout my training and professional practice. The goal is to highlight my commitment to continuous learning, technical growth, and the ability to create digital solutions with quality, organization, and attention to detail.
+
+`In addition, this repository serves as a way to validate and communicate to my recruiter, in a professional and structured manner, the level of competence I have reached in essential areas of web development, including front-end, back-end, system integration, programming logic, application architecture, and development best practices.`
+
+## Through this project, i'm to demonstrate not only my mastery of technologies and tools, but also my ability to solve problems, work as a team, learn quickly, and contribute to the development of modern, scalable applications aligned with market needs!
